@@ -2,79 +2,22 @@ import React from 'react';
 import logo from '../logo.svg';
 import '../style/main.css';
 
-const memoryCard =
-
-    <div className="col s12 m6 l3">
-        <div className="card">
-            <div className="card-image">
-                <img src={logo}></img>
-            </div>
-        </div>
-    </div>
-
-
-
 function main() {
+    function flipCard(button) {
+        button.preventDefault();
+        console.log("the image was clicked");
+    }
     return (
         <div className="container">
-            <div className="row">
-                <div className="col s12 m6 l3">
-                    {memoryCard}
+            <button className="flipButton" onClick={flipCard}>
+                <div className="card">
+                    <img className="logo" src={logo} alt="react-logo"></img>
                 </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-            </div>
-            <div className="row">
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-                <div className="col s12 m6 l3">
-                    {memoryCard}
-                </div>
-            </div>
+
+                Flip It!
+</button>
         </div>
-    );
+    )
 }
 
 export default main;
