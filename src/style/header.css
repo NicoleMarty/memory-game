@@ -1,11 +1,10 @@
 .header {
     background-color: #282c34;
-    min-height: 100vh;
-    display: inline-block;
-    flex-direction: column;
     color: white;
   }
-  
-  .container {
+h1, .lead {
+    padding-left: 2rem;
+  }
+.lead {
     padding-bottom: 2rem;
   }

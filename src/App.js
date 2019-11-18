@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Header from "./components/header";
+import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import FriendCard from "./components/FriendCard";
 import friends from "./Images.json";
@@ -18,16 +18,14 @@ class App extends Component {
     render() {
         return (
       <Wrapper>
-        <Header />
         {this.state.friends.map(friend => (
           <FriendCard
             chooseFriend={this.chooseFriend}
             id={friend.id}
             key={friend.id}
-            name={friend.name}
+ 
             image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+
           />
         ))}
       </Wrapper>
