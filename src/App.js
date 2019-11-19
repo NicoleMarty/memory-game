@@ -11,10 +11,17 @@ class App extends Component {
   };
 
   chooseFriend = id => {
-        const friends = this.state.friends.filter(friend => friend.id !== id);
-        this.setState({friends});
-    };
 
+
+    let friends = this.state.friends;
+    this.setState({friends});
+    for (let i = friends.length-1; i >= 0; i--) {
+      let randomIndex = Math.floor(Math.random() * (i+1));
+      let itemAtIndex = friends[randomIndex];
+      friends[randomIndex] = friends[i];
+      friends[i] = itemAtIndex;
+    }
+  }
     render() {
         return (
       <Wrapper>
@@ -23,9 +30,7 @@ class App extends Component {
             chooseFriend={this.chooseFriend}
             id={friend.id}
             key={friend.id}
- 
             image={friend.image}
-
           />
         ))}
       </Wrapper>
@@ -34,7 +39,5 @@ class App extends Component {
 }
 
     
-
-
 export default App;
 
