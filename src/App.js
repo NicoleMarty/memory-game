@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import FriendCard from "./components/FriendCard";
 import friends from "./Images.json";
@@ -22,7 +21,7 @@ class App extends Component {
   }
     render() {
         return (
-      <Header />
+      <div>
       <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
@@ -33,6 +32,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </div>
     );
   }
 }

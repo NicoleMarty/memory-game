@@ -1,6 +1,6 @@
 import React from "react";
-import "../style/wrapper.css";
 import Header from "./Header";
+import "../style/wrapper.css";
 
 
 function Wrapper(props) {
