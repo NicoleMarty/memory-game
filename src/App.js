@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Score from "./components/Score";
 import Wrapper from "./components/Wrapper";
 import FriendCard from "./components/FriendCard";
 import friends from "./Images.json";
@@ -22,7 +23,7 @@ class App extends Component {
     render() {
         return (
       <div>
-      
+      <Score></Score>
       <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
