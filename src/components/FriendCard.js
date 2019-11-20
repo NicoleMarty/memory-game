@@ -1,17 +1,20 @@
 import React from "react";
+
 import "../style/friendcard.css";
 
 function FriendCard(props) {
 
   return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
+    <button className="chooseFriend" onClick={() => props.chooseFriend(props.id)}>
+      <div className="card">
+        <div className="img-container">
+          <img className="friendImage"
+            alt={props.name} 
+            src={props.image} 
+          />
+        </div>
       </div>
-            <span onClick={() => props.chooseFriend(props.id)} className="chooseFriend">
-        X
-      </span>
-    </div>
+    </button>  
   );
 }
 

@@ -1,4 +1,4 @@
-.card {
+.chooseFriend .card {
   background: #fff;
   border-radius: 2px;
   height: 325px;
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.card {
+.chooseFriend {
   height: 60%;
   overflow: hidden;
   text-align: center;
@@ -20,10 +20,10 @@
   height: 325px;
   overflow: hidden;
   text-align: center;
-  background:#6CADDC;
+  
 
 }
-.card > .img-container > img {
+.chooseFriend .card > .img-container > img {
   width: 75%
 }
 
@@ -32,32 +32,3 @@ img {
   padding-bottom: 10%;
 }
 
-.card > {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
-}
-
-.card > {
-  list-style-type: none;
-}
-
-.card > {
-  margin-top: 18px;
-}
-
-
-
-
-.card > .chooseFriend {
-  color: #ff1744;
-  font-size: 28px;
-  position: absolute;
-  top: -1px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.card > .chooseFriend:hover {
-  color: #d50000;
-}
