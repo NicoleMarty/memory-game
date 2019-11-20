@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import FriendCard from "./components/FriendCard";
 import friends from "./Images.json";
