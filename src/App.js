@@ -22,6 +22,7 @@ class App extends Component {
   }
     render() {
         return (
+      <Header />
       <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
