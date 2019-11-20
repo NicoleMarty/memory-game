@@ -1,12 +1,27 @@
 .wrapper {
-    padding-top: 50px;
-    background: #ECEFF1;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 20px;
-    justify-content: space-around;
-    align-content: flex-start;
-    overflow: auto;
-  }
+  background: #ECEFF1;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.jumbotron {
+  background-color: #282c34;
+  color: white;
+}
   
+.title, .lead {
+  padding-left: 2rem;
+}
+
+.title {
+  padding-top: 2rem;
+  margin-top: 0px;
+}
+
+.lead {
+  padding-bottom: 2rem;
+}
