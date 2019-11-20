@@ -9,10 +9,8 @@ class App extends Component {
   state = {
     friends
   };
-
+  // Shuffling cards by id
   chooseFriend = id => {
-
-
     let friends = this.state.friends;
     this.setState({friends});
     for (let i = friends.length-1; i >= 0; i--) {
