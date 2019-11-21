@@ -1,11 +1,10 @@
 import React from "react";
-
 import "../style/friendcard.css";
 
 function FriendCard(props) {
 
   return (
-    <button className="chooseFriend" onClick={() => props.chooseFriend(props.id)}>
+    <div className="chooseFriend" onClick={() => props.chooseFriend(props.id)}>
       <div className="card">
         <div className="img-container">
           <img className="friendImage"
@@ -14,7 +13,7 @@ function FriendCard(props) {
           />
         </div>
       </div>
-    </button>  
+    </div>  
   );
 }
 
