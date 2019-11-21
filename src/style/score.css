@@ -1,0 +1,15 @@
+.title {
+    text-align: left;
+}
+
+.clickMessage {
+    text-align: center;
+}
+
+.correctClicks {
+    text-align: right;
+}
+
+.topScore {
+    text-align: right;
+}

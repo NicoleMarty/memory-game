@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import Score from "./components/Score";
+import Score from "./components/Score";
 import Wrapper from "./components/Wrapper";
 import FriendCard from "./components/FriendCard";
 import friends from "./Images.json";
@@ -30,7 +30,7 @@ let clickMessage = "Click on an image, but be careful not to click any more than
       console.log("Top Score: " + topScore);
 
       correctClicks = 0;
-      clickMessage = "Oh no! You've pledged your loyalty to someone unfit for the iron throne! To the dungeon!"
+      clickMessage = "Oh no! You've pledged your loyalty to someone unfit for the iron throne! To the dungeon!";
 
       for (let i = 0; i < friends.length; i++) {
         friends[i].clicked = false;
@@ -98,13 +98,13 @@ let clickMessage = "Click on an image, but be careful not to click any more than
   }
     render() {
       return (
-     
+     <div>
+        <Score
+          clickMessage={this.state.clickMessage}
+          correctClicks={this.state.correctClicks}
+          topScore={this.state.topScore}
+        />
         <Wrapper>
-        <h3 className="playerUpdate">{this.state.clickMessage}></h3>
-        <div className="scoreUpdate">
-          <h3 className="currentScore">Score:{this.state.correctClicks}</h3>
-          <h3 className="topScore">Top Score:{this.state.topScore}</h3>
-        </div>
           {this.state.friends.map(friend => (
             <FriendCard
               chooseFriend={this.chooseFriend}
@@ -114,6 +114,7 @@ let clickMessage = "Click on an image, but be careful not to click any more than
             />
           ))}
         </Wrapper>
+        </div>
       );
     }
   }
