@@ -6,7 +6,7 @@ function Wrapper(props) {
     
   return (
       <div>
-        <div className="jumbotron">
+        <div className="container">
             <h1 className="title">Memory Game</h1>
               <p className="lead">Click any card to start!</p>
         </div>
