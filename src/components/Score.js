@@ -5,9 +5,9 @@ function Score(props) {
 
     return(
         <div>
-            <div className="row">
+            <div className="row top-row">
                 <div className="col s2 m2 l2">
-                    <h6>Clicky Game</h6>
+                    <h6 className="label">Clicky Game</h6>
                 </div>
                 <div className="col s8 m8 l8">
                     <h6 className="clickMessage">{props.clickMessage}</h6>

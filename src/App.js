@@ -6,7 +6,7 @@ import friends from "./Images.json";
 
 let correctClicks = 0;
 let topScore = 0;
-let clickMessage = "Click on an image, but be careful not to click any more than once!";
+let clickMessage = "Click to pledge your loyaty to a queen bee.";
 
   class App extends Component {
 
@@ -30,7 +30,7 @@ let clickMessage = "Click on an image, but be careful not to click any more than
       console.log("Top Score: " + topScore);
 
       correctClicks = 0;
-      clickMessage = "Oh no! You've pledged your loyalty to someone unfit for the iron throne! To the dungeon!";
+      clickMessage = "Oh no! You've pledged your loyalty to the same mean queen twice! Now she rules. Get lost peasant!";
 
       for (let i = 0; i < friends.length; i++) {
         friends[i].clicked = false;
@@ -48,7 +48,7 @@ let clickMessage = "Click on an image, but be careful not to click any more than
       //add to score
       correctClicks++;
 
-      clickMessage = "Nice! Way to stab everyone else in the back! On your way to the throne!"
+      clickMessage = "Your betrayal skills are on point! Keep it up if you're going to be queen."
 
       if (correctClicks > topScore) {
         topScore = correctClicks;
@@ -74,7 +74,7 @@ let clickMessage = "Click on an image, but be careful not to click any more than
         // restart score
         correctClicks = 0;
         // notify they've won the iron throne
-        clickMessage = "You've done it! You're now the ruler of the seven kingdoms!";
+        clickMessage = "Wow! You're vicious! Obviously you deserve to be crowned the most fabulous of all mean girls.";
         topScore = 12;
         this.setState({topScore});
 

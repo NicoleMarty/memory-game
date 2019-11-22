@@ -1,5 +1,15 @@
-.title {
+.top-row {
+    background-color: rgb(238, 48, 187);
+    color: white;
+}
+
+.label {
     text-align: left;
+}
+
+.label, .clickMessage, .correctClicks, .topScore {
+    padding-top: .5em;
+    padding-bottom: 1em;
 }
 
 .clickMessage {
@@ -11,5 +21,5 @@
 }
 
 .topScore {
-    text-align: right;
+    text-align: left;
 }
