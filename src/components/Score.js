@@ -3,7 +3,7 @@ import '../style/score.css'
 
 function Score (props) {
   return (
-    <div>
+    <div className='navbar-fixed'>
       <div className='row top-row'>
         <div className='col s2 m2 l2'>
           <h6 className='label'>Memory Game</h6>
@@ -11,7 +11,7 @@ function Score (props) {
         <div className='col s8 m8 l8'>
           <h6 className='clickMessage'>{props.clickMessage}</h6>
         </div>
-        <div className='col s1 m1 l1'>
+        <div id='correct' className='col s1 m1 l1'>
           <h6 className='correctClicks'>
             Score:<span>&nbsp;&nbsp;</span>
             {props.correctClicks}
@@ -19,7 +19,7 @@ function Score (props) {
         </div>
         <div className='col s1 m1 l1'>
           <h6 className='topScore'>
-            Top Score:<span>&nbsp;&nbsp;</span>
+            Best:<span>&nbsp;&nbsp;</span>
             {props.topScore}
           </h6>
         </div>

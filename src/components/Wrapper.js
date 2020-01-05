@@ -12,7 +12,7 @@ function Wrapper (props) {
         </h5>
         <p className='lead'>(So fetch.)</p>
       </div>
-      <div class='container'>
+      <div className='container'>
         <div className='wrapper'>{props.children}</div>;
       </div>
     </div>

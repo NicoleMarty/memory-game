@@ -1,25 +1,32 @@
-.top-row {
-    background-color: rgb(238, 48, 187);
-    color: white;
+.navbar-fixed {
+  background-color: rgb(238, 48, 187);
+  color: white;
+  position: fixed;
+  z-index: 10;
+  min-width: 100vw;
 }
 
 .label {
-    text-align: left;
+  text-align: left;
 }
 
-.label, .clickMessage, .correctClicks, .topScore {
-    padding-top: .5em;
-    padding-bottom: 1em;
+.label,
+.clickMessage,
+.correctClicks,
+.topScore {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 .clickMessage {
-    text-align: center;
+  text-align: center;
 }
 
 .correctClicks {
-    text-align: right;
+  text-align: right;
 }
 
 .topScore {
-    text-align: left;
+  text-align: left;
+  margin-right: 0.5em;
 }
