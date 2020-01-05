@@ -19,7 +19,7 @@ function Score (props) {
         </div>
         <div className='col s1 m1 l1'>
           <h6 className='topScore'>
-            Wins:<span>&nbsp;&nbsp;</span>
+            Top Score:<span>&nbsp;&nbsp;</span>
             {props.topScore}
           </h6>
         </div>
